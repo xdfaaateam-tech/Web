@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DF STUDIOS | Official Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('banner.png') center/cover no-repeat;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.75);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:800px;
+padding:20px;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:3.8rem;
+background:linear-gradient(90deg,#d4af37,#ffcc70);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#bbb;
+font-size:1.1rem;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+background:#76CC11;
+color:#000;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#8fff1f;
+transform:translateY(-3px);
+}
+
+/* SECTION */
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:2.3rem;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+.section p{
+color:#aaa;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+/* FOOTER */
+footer{
+background:#111;
+padding:25px;
+text-align:center;
+color:#777;
+border-top:1px solid rgba(255,255,255,0.1);
+}
+
+/* ALERT CONTAINER */
+.alert-container{
+position:fixed;
+top:15px;
+right:15px;
+width:380px;
+height:220px;
+z-index:9999;
+pointer-events:none;
+}
+
+.alert-container iframe{
+width:100%;
+height:100%;
+border:none;
+background:transparent;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero h1{
+font-size:2.3rem;
+}
+.alert-container{
+width:300px;
+height:180px;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- DONATION ALERT FIXED -->
+<div class="alert-container">
+<iframe src="https://sociabuzz.com/pro/tribe/alert1/v3/8187414594?colorName=%2300ff00&alphaName=1&colorNote=%23ffff00&alphaNote=1&colorFrom=%23eeeeee&alphaFrom=1&gifActive=1&maxDuration=12&font=Open%2BSans%3A800"></iframe>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+<h1>DF STUDIOS</h1>
+<p>Cinematic Storytelling • Creative Entertainment • Visual Masterpiece</p>
+<a href="https://youtube.com/@dfstudios01?si=49Xmag-1IOjEJ6Wl" target="_blank" class="btn">Visit YouTube Channel</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+<h2>About DF STUDIOS</h2>
+<p>
+DF STUDIOS menghadirkan konten cinematic dengan kualitas visual premium,
+storytelling emosional, dan pengalaman yang memikat penonton.
+</p>
+</section>
+
+<!-- SUPPORT -->
+<section class="section">
+<h2>Support Us</h2>
+<p>Dukungan kamu membantu kami terus berkembang dan meningkatkan kualitas produksi.</p>
+</section>
+
+<footer>
+© 2026 DF STUDIOS. All Rights Reserved.
+</footer>
+
+<!-- DONATION BUTTON -->
+<script type="text/javascript" src="https://storage.sociabuzz.com/storage/js/main/buttononwebsite/index.min.js"></script>
+<script>
+sbBoW.draw("8272662","QmVyaSBEdWt1bmdhbg","position-bottom-middle","#76CC11","#FFFFFF")
+</script>
+
+</body>
+</html>
