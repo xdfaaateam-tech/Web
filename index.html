@@ -1,182 +1,162 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DF STUDIOS | Official Website</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
-}
-
-body{
-background:#0b0b0b;
-color:#fff;
-overflow-x:hidden;
-}
-
-/* HERO */
-.hero{
-height:100vh;
-background:url('banner.png') center/cover no-repeat;
-position:relative;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.75);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-max-width:800px;
-padding:20px;
-}
-
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:3.8rem;
-background:linear-gradient(90deg,#d4af37,#ffcc70);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-margin-bottom:15px;
-}
-
-.hero p{
-color:#bbb;
-font-size:1.1rem;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 32px;
-background:#76CC11;
-color:#000;
-text-decoration:none;
-border-radius:40px;
-font-weight:600;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#8fff1f;
-transform:translateY(-3px);
-}
-
-/* SECTION */
-.section{
-padding:100px 10%;
-text-align:center;
-}
-
-.section h2{
-font-family:'Playfair Display',serif;
-font-size:2.3rem;
-color:#d4af37;
-margin-bottom:25px;
-}
-
-.section p{
-color:#aaa;
-max-width:700px;
-margin:auto;
-line-height:1.8;
-}
-
-/* FOOTER */
-footer{
-background:#111;
-padding:25px;
-text-align:center;
-color:#777;
-border-top:1px solid rgba(255,255,255,0.1);
-}
-
-/* ALERT CONTAINER */
-.alert-container{
-position:fixed;
-top:15px;
-right:15px;
-width:380px;
-height:220px;
-z-index:9999;
-pointer-events:none;
-}
-
-.alert-container iframe{
-width:100%;
-height:100%;
-border:none;
-background:transparent;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-.hero h1{
-font-size:2.3rem;
-}
-.alert-container{
-width:300px;
-height:180px;
-}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DF STUDIOS - Film Pendek Berkualitas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Notification Container -->
+    <div id="notificationContainer" class="notification-container"></div>
 
-<!-- DONATION ALERT FIXED -->
-<div class="alert-container">
-<iframe src="https://sociabuzz.com/pro/tribe/alert1/v3/8187414594?colorName=%2300ff00&alphaName=1&colorNote=%23ffff00&alphaNote=1&colorFrom=%23eeeeee&alphaFrom=1&gifActive=1&maxDuration=12&font=Open%2BSans%3A800"></iframe>
-</div>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="banner.png" alt="DF STUDIOS Logo" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                    <li><a href="#support" class="nav-link">Support</a></li>
+                    <li><a href="#social" class="nav-link">Ikuti Kami</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<!-- HERO -->
-<section class="hero">
-<div class="hero-content">
-<h1>DF STUDIOS</h1>
-<p>Cinematic Storytelling • Creative Entertainment • Visual Masterpiece</p>
-<a href="https://youtube.com/@dfstudios01?si=49Xmag-1IOjEJ6Wl" target="_blank" class="btn">Visit YouTube Channel</a>
-</div>
-</section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="banner.png" alt="DF STUDIOS Banner" class="hero-banner">
+            <h1 class="hero-title">DF STUDIOS</h1>
+            <p class="hero-subtitle">Tempatnya film pendek seru yang bikin nagih!</p>
+            <a href="#support" class="cta-button">Support Sekarang</a>
+        </div>
+    </section>
 
-<!-- ABOUT -->
-<section class="section">
-<h2>About DF STUDIOS</h2>
-<p>
-DF STUDIOS menghadirkan konten cinematic dengan kualitas visual premium,
-storytelling emosional, dan pengalaman yang memikat penonton.
-</p>
-</section>
+    <!-- About Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <h2 class="section-title">📺 Tentang DF STUDIOS</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Selamat datang di DF STUDIOS - Tempatnya film pendek seru yang bikin nagih!
+                </p>
+                <p class="about-text">
+                    Di sini kamu bakal nemuin cerita-cerita penuh drama, konflik tak terduga, misteri menegangkan, sampai aksi yang bikin deg-degan. Setiap video punya alur yang beda, emosi yang kuat, dan ending yang nggak gampang ditebak.
+                </p>
 
-<!-- SUPPORT -->
-<section class="section">
-<h2>Support Us</h2>
-<p>Dukungan kamu membantu kami terus berkembang dan meningkatkan kualitas produksi.</p>
-</section>
+                <div class="features">
+                    <div class="feature-item">
+                        <i class="fas fa-fire"></i>
+                        <h3>Plot Twist Mengejutkan</h3>
+                        <p>Setiap cerita dirancang dengan ending yang nggak terduga</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-heart-broken"></i>
+                        <h3>Konflik & Pengkhianatan</h3>
+                        <p>Cerita penuh emosi dan drama yang menyentuh hati</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mountain"></i>
+                        <h3>Perjuangan & Aksi</h3>
+                        <p>Scene yang bikin merinding dan deg-degan</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-brain"></i>
+                        <h3>Cerita Relatable</h3>
+                        <p>Konsep sinematik yang dekat dengan kehidupan nyata</p>
+                    </div>
+                </div>
 
-<footer>
-© 2026 DF STUDIOS. All Rights Reserved.
-</footer>
+                <div class="upload-schedule">
+                    <h3>📅 Jadwal Upload</h3>
+                    <p><strong>Setiap minggu dengan kualitas sinematik terbaik</strong></p>
+                    <p class="note">Subscribe dan aktifkan notifikasi supaya nggak ketinggalan cerita terbaru! 🔔</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- DONATION BUTTON -->
-<script type="text/javascript" src="https://storage.sociabuzz.com/storage/js/main/buttononwebsite/index.min.js"></script>
-<script>
-sbBoW.draw("8272662","QmVyaSBEdWt1bmdhbg","position-bottom-middle","#76CC11","#FFFFFF")
-</script>
+    <!-- Support Section -->
+    <section id="support" class="support">
+        <div class="container">
+            <h2 class="section-title">💖 Dukung DF STUDIOS</h2>
+            <p class="support-subtitle">Bantu kami terus berkarya dengan memberikan dukungan</p>
+            
+            <div class="support-content">
+                <p class="support-text">
+                    Dukungan Anda membantu kami untuk terus menciptakan film pendek berkualitas dan cerita-cerita yang menginspirasi. 
+                    Setiap donasi akan digunakan untuk meningkatkan kualitas produksi dan memproduksi lebih banyak konten seru! 🎬
+                </p>
+            </div>
 
+            <!-- Donation Button -->
+            <div class="donation-section">
+                <h3>Dukung Melalui Sociabuzz</h3>
+                <div id="sociabuzzContainer"></div>
+                <script type="text/javascript" src="https://storage.sociabuzz.com/storage/js/main/buttononwebsite/index.min.js"></script>
+                <script>
+                    sbBoW.draw("8272662","QmVyaSBEdWt1bmdhbg","position-bottom-middle","#76CC11","#FFFFFF")
+                </script>
+            </div>
+
+            <!-- Donation Alert Link -->
+            <div class="donation-link-section">
+                <p class="donation-link-text">Atau lihat donasi real-time dengan efek visual yang keren:</p>
+                <a href="https://sociabuzz.com/pro/tribe/alert1/v3/8187414594?colorName=%2300ff00+&alphaName=1&colorNote=%23ffff00&alphaNote=1&colorFrom=%23eeeeee&alphaFrom=1&gifActive=1&maxDuration=12&font=Open%2BSans%3A800" target="_blank" class="donation-link-btn">
+                    <i class="fas fa-external-link-alt"></i> Lihat Alert Donasi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="social">
+        <div class="container">
+            <h2 class="section-title">🌐 Ikuti Kami di Mana-Mana</h2>
+            <p class="social-subtitle">Jangan lewatkan konten terbaru di platform favorit kamu</p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1DkPQ5mVfK/" target="_blank" class="social-card facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <h3>Facebook</h3>
+                    <p>Ikuti kami di Facebook</p>
+                </a>
+
+                <a href="https://www.instagram.com/df_studios.id?igsh=YmN2bXFraHF5YjM1" target="_blank" class="social-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Lihat konten eksklusif</p>
+                </a>
+
+                <a href="https://youtube.com/@dfstudios01?si=9nUgRmaL09z-_CUU" target="_blank" class="social-card youtube">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>Subscribe dan notifikasi</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 DF STUDIOS. All rights reserved. | Tempatnya film pendek seru yang bikin nagih! 🎬</p>
+            <p class="footer-tagline">Setiap cerita punya kejutan… dan kamu nggak akan siap untuk akhirnya.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
